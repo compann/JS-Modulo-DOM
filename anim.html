@@ -1,0 +1,207 @@
+<html>
+    <body>
+        <style>
+            /*
+            .box {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                margin-left: 0;
+            }
+
+            .animEsquerda {
+                transition: 1s;
+                margin-left: 10px;
+
+            }
+            */
+            .conteudo h2 span{
+                font-size: 13px;
+                cursor: pointer;
+            }
+
+            .conteudo h2 span2{
+                font-size: 13px;
+                cursor: pointer;
+            }
+
+            .conteudo h2 span3{
+                font-size: 13px;
+                cursor: pointer;
+            }
+
+            .conteudo h2 span4{
+                font-size: 13px;
+                cursor: pointer;
+            }
+
+            .conteudo p {
+                overflow: hidden;
+                height: 10px;
+                transition: 1s;
+            }
+
+            .conteudo2 h2 span{
+                font-size: 13px;
+                cursor: pointer;
+            }
+
+            .conteudo2 p {
+                overflow: hidden;
+                height: 10px;
+                transition: 1s;
+            }
+
+            .conteudo3 h2 span{
+                font-size: 13px;
+                cursor: pointer;
+            }
+
+            .conteudo3 p {
+                overflow: hidden;
+                height: 10px;
+                transition: 1s;
+            }
+
+
+            .conteudo4 h2 span{
+                font-size: 13px;
+                cursor: pointer;
+            }
+
+            .conteudo4 p {
+                overflow: hidden;
+                height: 10px;
+                transition: 1s;
+            }
+
+            .mostrar {
+                height: 200px !important;
+            }
+        </style>
+       <!-- <div class = "box" ></div>-->
+
+       <div class="conteudo">
+            <h2>Titulo do conteudo <span> Ver Mais!</span></h2>
+            <p> What is Lorem Ipsum?
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+       </div>
+
+       <div class="conteudo2">
+        <h2>Titulo do conteudo <span2> Ver Mais!</span></h2>
+        <p> What is Lorem Ipsum?
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+   </div>
+
+   <div class="conteudo3">
+    <h2>Titulo do conteudo <span3> Ver Mais!</span></h2>
+    <p> What is Lorem Ipsum?
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+</div>
+
+
+<div class="conteudo4">
+    <h2>Titulo do conteudo <span4> Ver Mais!</span></h2>
+    <p> What is Lorem Ipsum?
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+</div>
+
+
+
+
+        <script>
+            /*
+            var box = document.querySelectorAll('.box')[0];
+
+            
+            setTimeout(()=> {
+                box.classList.add('animEsquerda');
+            },1000);
+
+                 
+                box.addEventListener('click',()=>{
+                    box.classList.add('animEsquerda');
+                })
+            */ 
+
+                var span =   document.querySelector('.conteudo span');
+                span.addEventListener('click', function(){
+               var conteudo = document.querySelector('.conteudo p');
+
+               if (conteudo.classList.contains ('mostrar')){
+                    span.innerHTML = 'Ver Mais!';
+                    conteudo.classList.remove('mostrar');
+               } else {
+                    span.innerHTML = 'Ocultar';
+                    conteudo.classList.add('mostrar');
+                   
+                    
+               }
+
+            });
+
+            var span2 =   document.querySelector('.conteudo2 span2');
+                span2.addEventListener('click', function(){
+               var conteudo2 = document.querySelector('.conteudo2 p');
+
+               if (conteudo2.classList.contains ('mostrar')){
+                    span2.innerHTML = 'Ver Mais!';
+                    conteudo2.classList.remove('mostrar');
+               } else {
+                    span2.innerHTML = 'Ocultar';
+                    conteudo2.classList.add('mostrar');
+                   
+                    
+               }
+
+            });
+
+
+            var span3 =   document.querySelector('.conteudo3 span3');
+                span3.addEventListener('click', function(){
+               var conteudo3 = document.querySelector('.conteudo3 p');
+
+               if (conteudo3.classList.contains ('mostrar')){
+                    span3.innerHTML = 'Ver Mais!';
+                    conteudo3.classList.remove('mostrar');
+               } else {
+                    span3.innerHTML = 'Ocultar';
+                    conteudo3.classList.add('mostrar');
+                   
+                    
+               }
+
+            });
+
+
+            var span4 =   document.querySelector('.conteudo4 span4');
+                span4.addEventListener('click', function(){
+               var conteudo4 = document.querySelector('.conteudo4 p');
+
+               if (conteudo4.classList.contains ('mostrar')){
+                    span4.innerHTML = 'Ver Mais!';
+                    conteudo4.classList.remove('mostrar');
+               } else {
+                    span4.innerHTML = 'Ocultar';
+                    conteudo4.classList.add('mostrar');
+                   
+                    
+               }
+
+            });
+                        
+   
+
+     
+           
+
+     
+  
+
+        </script>
+    </body>
+</html>

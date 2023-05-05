@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <div class="testes">
+            <div class="inside-testes">
+                Texto
+
+            </div>
+
+            </div>
+
+            <div class="testes">
+                <div class="inside-testes">
+                    Texto2
+    
+                </div>
+            </div>
+            
+            <script>
+                var els = document.querySelectorAll('.testes .inside-testes');
+                
+                //manipulando o elemento
+                
+                els[0].innerHTML = '<div class ="inside-testes-via-js" > oiii </div>  ';
+            </script>
+        
+    </body>
+</html>
